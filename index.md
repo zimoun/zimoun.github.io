@@ -28,7 +28,7 @@ Research
 ========
 My day job is as a [Postdoctoral Research Fellow](/work/) 
 in computational acoustic and electromagnetism
-at [Pontifica Universidad Catolica de Chile](http://www.puc.cl)   
+at [Pontifica Universidad Catolica de Chile](http://www.puc.cl).
 
 See my 
 [publications](/work/pub.html) 
@@ -60,8 +60,8 @@ I barely use Social Network,
 I mean,
 
 {% highlight python %}
-for SocialNetwork in [Facebook, Linkedin, Twitter, And-So-On]: 
-    if find(me == SocialNetwork):   
+for SocialNetwork in [Facebook, Twitter, Phone, And-So-On]: 
+    if find(me, SocialNetwork):   
        return not me + noise()
 {% endhighlight %}
 
