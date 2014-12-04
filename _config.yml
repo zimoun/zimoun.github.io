@@ -3,6 +3,6 @@ auto        : false
 lsi         : false
 pygments    : true
 permalink   : none
-markdown    : markuru
+markdown    : maruku
 
     
