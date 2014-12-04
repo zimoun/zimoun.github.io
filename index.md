@@ -16,10 +16,10 @@ usually
 trekking somewhere
 or on the road elsewhere ;
 or sometimes  close to my computer
-and interrested by 
+and interested by 
 [computational problems arising from engineering world](/work/),
 or just by [42](/code/) ;
-I'm French, epicurian, coffee addict,
+I'm French, epicurean, coffee addict,
 fan of bad movies, ...
 
 
@@ -33,7 +33,7 @@ at [Pontifica Universidad Catolica de Chile](http://www.puc.cl).
 See my 
 [publications](/work/pub.html) 
 or my [CV](/about/CV.html) ([pdf](/about/CV_tournier.pdf))
-for a concrete overiew.
+for a concrete overview.
 =--
 
 +--{.section}
@@ -73,7 +73,7 @@ Email me: **simon** |DOT| **tournier** |AT| **gmail** |DOT| **com**
 <em>
 Mais il restait le monde entier à explorer</br>
 et derrière les montagnes
-j'imagiais toujours des horizons sans limites.
+j'imaginais toujours des horizons sans limites.
 </em>
 </center>
 <center>
