@@ -11,14 +11,17 @@ $$ a = 1 $$
 
 $ b = 2 $
 
-\( f(x) = g^2 \)
-
 super
 
-$$ \int x $$
+$$ 
+\int x 
+$$
 
 \[ h(x) = \Delta s^2 \]
 
 
 Well, this is the first try to test.
+$ 1/x^{2} $
+mouais craps
+\[ \frac{1}{n^{2}} \]
 
