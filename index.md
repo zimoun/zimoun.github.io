@@ -64,7 +64,7 @@ fan of bad movies, ...
   about my current thoughts.
   It is only my personal notes
   or some small <s>Post-it</s> "repositionable notes" for myself.
-  Recent posts include:
+  </br>Recent posts include:
   <p>
   {% for post in site.categories.blog limit:3 %}
   <ul class="compact recent">
@@ -95,11 +95,17 @@ for SocialNetwork in [Facebook, Twitter, Phone, And-So-On]:
   </p>
 </div>
 
-
-- - - -  
-*Mais il restait le monde entier à explorer*  
-*et derrière les montagnes*
-*j'imaginais toujours des horizons sans limites.*  
-[Carlo Rovelli](http://www.cpt.univ-mrs.fr/~rovelli)
-**in** "Qu'est-ce que le temps ? Qu'est-ce que l'espace ?"
-{: style="text-align: center"}
+<p></p>
+<p></p>
+<center>
+</hr>
+<em>
+Mais il restait le monde entier à explorer</br>
+et derrière les montagnes
+j'imagiais toujours des horizons sans limites.
+</em>
+</center>
+<center>
+<a href="http://www.cpt.univ-mrs.fr/~rovelli/">Carlo Rovelli</a>
+<b>in</b> Qu'est-ce que le temps ? Qu'est-ce que l'espace ?
+</center>
