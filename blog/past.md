@@ -3,7 +3,6 @@ layout: blog
 title: Archives
 section: Past
 
-feed: atom.xml
 keywords: Numerical Analysis, Stuffs, Blog, Research, Academia
 ---
 
