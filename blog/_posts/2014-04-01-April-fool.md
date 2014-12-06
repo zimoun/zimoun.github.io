@@ -4,6 +4,10 @@ title: A test
 location: Santiago
 ---
 
+This test is just to validate the `use_math` variable and the
+`mathjax` stuff.
+Form this small test, it is working very well.
+
 $$
 \newcommand{\myint}{ \int }
 \newcommand{\myref}{ Eq. }

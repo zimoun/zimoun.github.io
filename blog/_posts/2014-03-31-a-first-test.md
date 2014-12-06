@@ -7,6 +7,8 @@ use_math: true
 
 I start to write something.
 But problems with Maths still occur... oh no!!
+I write another stuffs, just to see what happens now.  
+The double space are not great at all to break the line. But whatever !
 
 $$ a = 1 $$
 
