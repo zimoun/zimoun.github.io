@@ -19,6 +19,7 @@ I add some other text.
 I add some other text.
 I add some other text.
 I add some other text.
+The end of the paragraph.
 
 Ya, does it work ?
 

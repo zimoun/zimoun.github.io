@@ -1,12 +1,14 @@
 --- 
 layout: blog-post
-title: A test
+title: A test (equations are not displayed)
 location: Santiago
 ---
 
 This test is just to validate the `use_math` variable and the
 `mathjax` stuff.
 Form this small test, it is working very well.
+
+I check `use_math`
 
 $$
 \newcommand{\myint}{ \int }

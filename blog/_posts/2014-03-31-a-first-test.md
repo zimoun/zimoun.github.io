@@ -1,6 +1,6 @@
 --- 
 layout: blog-post
-title: A first test
+title: A first test (math works!)
 location: Santiago
 use_math: true
 ---
