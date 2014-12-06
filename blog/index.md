@@ -3,15 +3,12 @@ layout: blog
 title: Home
 section: Home
 
-feed: atom.xml
 keywords: Numerical Analysis, Stuffs, Blog, Research, Academia
 ---
 
 Thoughts 
 ========
 
-
-[feed]: /blog/atom.xml
 
 Recent Posts
 ------------

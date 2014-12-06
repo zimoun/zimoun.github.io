@@ -1,11 +1,32 @@
 ---
 layout: default
 top: another Blog
-feed: atom.xml
 ---
 
 <div id="header">
 	{% include nav-blog.html %}
+
+	{% if page.use_math %}
+	<!-- MathJax configuration and loading -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  extensions: ["tex2jax.js"],
+	  jax: ["input/TeX", "output/HTML-CSS"],
+	  tex2jax: {
+	  inlineMath: [ ['$', '$'] ],
+	  displayMath: [  ['$$', '$$'],["\[","\]"] ],
+	  processEscapes: true
+	  },
+	  TeX: { equationNumbers: { autoNumber: "AMS" } },
+	  "HTML-CSS": { availableFonts: ["TeX"] }
+	  });
+	</script>
+    <!-- mathjax -->
+    <script type="text/javascript"
+			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?
+				 config=TeX-AMS-MML_HTMLorMML">
+    </script>
+	{% endif %}
 </div>
 
 <div id="page">
@@ -15,7 +36,7 @@ feed: atom.xml
 {{ content }}
 
   <address class="signature">
-    <a class="author" href="http://zimoun.bitbucket.org">simon tournier</a> 
+    <a class="author" href="http://zimoun.github.io">simon</a> 
     <span class="date">{{ page.date | date_to_long_string }}</span>
     <span class="location">{{ page.location }}</span>
   </address>

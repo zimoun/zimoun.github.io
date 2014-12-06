@@ -7,19 +7,16 @@ section: Work
 top: Home
 ---
 
-<center>
-<em>
- Engineering does not require science.</br>
- Science helps
- a lot but people built perfectly good brick walls long before they knew why
- cement works.
-</em>
-</center>
-<center>
-<a href="https://en.wikipedia.org/wiki/Alan_Cox"> Alan Cox</a> (linux kernel developper) 
-<b>in</b>
-<a href="https://lkml.org/lkml/2001/12/1/110">LKM</a>
-</center>
+*Engineering does not require science.*  
+*Science helps a lot*
+*but people built perfectly good brick walls*  
+*long before they knew why cement works.*  
+[Alan Cox][cox]
+**in**
+[LKM](https://lkml.org/lkml/2001/12/1/110)
+{: style="text-align: center"}
+
+[cox]: https://en.wikipedia.org/wiki/Alan_Cox
 
 General
 =======

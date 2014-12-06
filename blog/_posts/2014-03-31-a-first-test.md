@@ -1,7 +1,8 @@
 --- 
 layout: blog-post
 title: A first test
-location: Santiago, 
+location: Santiago
+use_math: true
 ---
 
 I start to write something.
@@ -25,3 +26,6 @@ $ 1/x^{2} $
 mouais craps
 \[ \frac{1}{n^{2}} \]
 
+\begin{equation}
+E = mc^2
+\end{equation}
