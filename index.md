@@ -102,7 +102,7 @@ for SocialNetwork in [Facebook, Twitter, Phone, And-So-On]:
 <em>
 Mais il restait le monde entier à explorer</br>
 et derrière les montagnes
-j'imagiais toujours des horizons sans limites.
+j'imaginais toujours des horizons sans limites.
 </em>
 </center>
 <center>
