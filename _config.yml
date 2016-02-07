@@ -4,5 +4,3 @@ lsi         : false
 pygments    : true
 permalink   : none
 markdown    : kramdown
-
-    
