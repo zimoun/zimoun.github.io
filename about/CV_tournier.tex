@@ -1,0 +1,556 @@
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,french]{babel}
+\frenchspacing
+\usepackage{aeguill}
+%\usepackage{textcomp}
+\usepackage{xcolor}
+%\usepackage{latexsym}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+\usepackage{verbatim}
+\usepackage{geometry}
+\geometry{hmargin=50pt, vmargin=30pt}  % 60 et 70
+%\usepackage{url}
+\usepackage{hyperref}
+
+\definecolor{Orange}{rgb}{0.85,0.57,0.2}
+\newcommand{\fin}{\\[1ex]}
+\newcommand{\espace}{\vskip 1cm}
+
+\hyphenation{ENSEEIHT Software}
+
+% ----------------------------------------------
+% Partie récupérée de Bertrand
+
+% ----------------------------
+% Titre de parties
+\newcommand{\categorie}[1]{\vspace*{0.1cm}\noindent%
+	{\center  \colorbox[gray]{0.9}{\makebox[\textwidth][c]{\Large
+              \sc {#1}}}\par}\vspace*{.5cm}}
+% ----------------------------
+% Largeur des deux colonnes : 
+% Soit colunnun et colonndeux, pour les en-tetes
+\newlength{\colonneun}
+\settowidth{\colonneun}{B.P. 239, F-54506 Vandoeuvre-lès-Nancy Cedex peu de place}
+\newlength{\colonnedeux}
+\setlength{\colonnedeux}{\textwidth}
+\addtolength{\colonnedeux}{- \colonneun}
+\addtolength{\colonnedeux}{-2\tabcolsep}
+% Soit annee et texte pour les paragraphes standard annee - etudes (autres categories)
+\newlength{\annee}
+\settowidth{\annee}{\textbf{2007 -- 2010}}
+\newlength{\texte}
+\setlength{\texte}{\textwidth} \addtolength{\texte}{-\annee} 
+	\addtolength{\texte}{-2\tabcolsep}
+\newlength{\anneelarge}
+\settowidth{\anneelarge}{\textbf{Depuis Sept. 2007}}
+\newlength{\textelarge}
+\setlength{\textelarge}{\textwidth} \addtolength{\textelarge}{-\anneelarge} 
+	\addtolength{\textelarge}{-2\tabcolsep}
+% \texte est la largeur de la deuxième colonne. Elle est définie comme
+% étant la largeur de la page moins celle de la première colonne.
+% 2\tabcolsep est la largeur de l'espacement entre les colonnes.
+% ----------------------------
+
+
+% ----------------------------------------------
+
+% Partie adaptée de F. Clautiaux
+% Première version : novembre 2004
+% Dernière modification 03 janvier 2005
+
+\newcommand{\entrylabel}[1]{\mbox{#1}\hfil}
+
+\newenvironment{CV}
+  {\begin{list}{}
+    {\renewcommand{\makelabel}{\entrylabel}
+      \setlength{\labelwidth}{77pt}
+      \setlength{\leftmargin}{84pt}
+    }
+  }
+  {\end{list}
+  }
+
+
+%%%%%%%%%%%%%%
+%%% PUBLIS %%%
+%%%%%%%%%%%%%%
+
+ %% INITPUBLIS : A LANCER AVANT DE METTRE LES LISTES DE PUBLIS
+ \newcommand{\initpublis}{ 
+   \newcounter{cptpub} 
+   \setcounter{cptpub}{0}
+ }
+
+\newcommand{\initconf}{ 
+   \newcounter{cptconf} 
+   \setcounter{cptconf}{0}
+ }
+
+\newcommand{\initconfss}{ 
+   \newcounter{cptconfss} 
+   \setcounter{cptconfss}{0}
+ }
+
+ %% LISTPUBLIS : permet de cacher le truc bien compliqué ci-dessous
+\newenvironment{listpublis}
+  { \begin{CV} \item
+    \begin{list}{[\arabic{enumi}]}{\settowidth\labelwidth{[10]}\topsep.4\topsep\itemsep-.2\baselineskip\leftmargin\labelwidth
+         \advance\leftmargin\labelsep \usecounter{enumi}} \def\newblock{\hskip .11em
+         plus .33em minus .07em} \sloppy\clubpenalty4000\widowpenalty4000
+       \sfcode`\.=1000\relax\setcounter{enumi}{\value{cptpub}} 
+  }
+  {\end{list}
+   \end{CV}
+  }
+
+\newenvironment{listconf}
+  { \begin{CV} \item
+    \begin{list}{[\arabic{enumi}]}{\settowidth\labelwidth{[10]}\topsep.4\topsep\itemsep-.2\baselineskip\leftmargin\labelwidth
+         \advance\leftmargin\labelsep \usecounter{enumi}} \def\newblock{\hskip .11em
+         plus .33em minus .07em} \sloppy\clubpenalty4000\widowpenalty4000
+       \sfcode`\.=1000\relax\setcounter{enumi}{\value{cptconf}} 
+  }
+  {\end{list}
+   \end{CV}
+  }
+
+\newenvironment{listconfss}
+  { \begin{CV} \item
+    \begin{list}{[\arabic{enumi}]}{\settowidth\labelwidth{[10]}\topsep.4\topsep\itemsep-.2\baselineskip\leftmargin\labelwidth
+         \advance\leftmargin\labelsep \usecounter{enumi}} \def\newblock{\hskip .11em
+         plus .33em minus .07em} \sloppy\clubpenalty4000\widowpenalty4000
+       \sfcode`\.=1000\relax\setcounter{enumi}{\value{cptconfss}} 
+  }
+  {\end{list}
+   \end{CV}
+  }
+
+% \newcommand{\publication}[4]{
+%       #1,
+%       \emph{#2},
+%       #3, #4 \\
+%       \stepcounter{cptpub}
+% }
+
+
+% UNE PUBLICATION
+% CLE, auteurs, titre, nom de la revue / conf, date
+\newcommand{\publi}[5]{
+  \bibitem{#1}
+      #2,
+      \emph{#3},
+      #4, #5 \\
+      \stepcounter{cptpub}
+}
+
+\newcommand{\conf}[5]{
+  \bibitem{#1}
+      #2,
+      \emph{#3},
+      #4, #5 \\
+      \stepcounter{cptconf}
+}
+
+\newcommand{\confss}[5]{
+  \bibitem{#1}
+      \emph{#2},
+      #3, #4 \\
+      \stepcounter{cptconfss}
+}
+
+\initpublis
+\initconf
+\initconfss
+
+% exemple d'utilisation
+% ---------------------
+%
+% \begin{listpublis}
+% \publi{PUB92}{Jacques Dupont}{Titre de ma publi}{Référence du bouquin, article, conf}{date}
+% \publi{PUB92B}{Jacques Dupont}{Titre de ma publi 2}{Référence du bouquin, article, conf}{date}
+%\end{listpublis}
+% ...
+% \begin{listpublis}
+% \publi{SYS32}{Jacques Dupont}{Titre de ma publi 3}{Référence du bouquin, article, conf}{date}
+% \publi{ARJ45}{Jacques Dupont}{Titre de ma publi 4}{Référence du bouquin, article, conf}{date}
+%\end{listpublis}
+
+% Plus besoin de gérer la numérotation !
+
+% ----------------------------------------------
+
+\newcommand\moi{$\underline{\textrm{S. Tournier}}$}
+
+\begin{document}
+\pagestyle{empty}
+
+
+\noindent
+\begin{tabular}{@{} l @{\quad} r}
+  \begin{minipage}[t]{0.55\linewidth} 
+    \textbf{{\Large Simon \textsc{Tournier}}\\[1ex] } 
+    Born the 23${}^{rd}$ June 1983 in Montpellier (France)\\
+    French\\
+  \end{minipage}
+  &
+  %\colorbox{Orange}{
+  \begin{minipage}[t]{0.45\linewidth}
+    \begin{flushright}
+      Dept. of Mathematical Eng.\\
+      Pontificia Universidad Catolica de Chile\\
+      Av. Vicuna Mackenna 4860,
+      Macul\\
+      Santiago de Chile
+    \end{flushright}
+  \end{minipage} %}
+\end{tabular}
+
+\medskip
+
+\noindent
+\begin{tabular}{@{} l l}
+  \textit{Email :} & \url{ simon.tournier@alumni.enseeiht.fr} \\
+\end{tabular}
+
+\medskip
+
+\begin{center}
+  \line(1,0){250}
+  \\
+  \vspace{0.1cm}
+  Modeling and Analysis in Computational Electromagnetism and Acoustic,
+  Preconditionning techniques,
+  Homogenization,
+  Asymptotic Expansion,
+  Rough Surfaces,
+  Domain Decomposition Method,\\
+  Scientific Programming
+  \\
+  \line(1,0){250}
+\end{center}
+
+\vspace{-0.6cm}
+\categorie{Academic Background and Experiences}
+
+\noindent
+\begin{tabular}{r @{\qquad} p{\textelarge}}
+
+  \textbf{2014 -- (2016)} &
+  \begin{minipage}[t]{\linewidth}  
+    \textbf{Post-doctoral} position in the PUC (Chile)
+    \small{[FONDECYT grant: 3150446]} \\
+    \normalsize
+    under the supervsion of \textsf{Carlos Jerez-Hanckes},\\
+    \emph{Efficient and Robust HPC Solver
+      for Multiple Traces Formulations}\\
+       \emph{for Engineering Applications}. \\[-1ex]
+  \end{minipage} \\
+
+  
+  \textbf{2012 -- 2013} &
+  \begin{minipage}[t]{\linewidth}  
+    \textbf{Post-doctoral} position in the University of Liège (Belgium),
+    in the ACE team,\\
+    under the supervsion of \textsf{Christophe Geuzaine},\\
+    \emph{Study of some preconditioning techniques
+      for Finite Elements Methods}\\
+    \emph{and Decomposition of Domain Method}.  \\[-1ex]
+  \end{minipage} \\
+
+  \textbf{2007 -- 2012} &   
+  \begin{minipage}[t]{\linewidth}  
+    \textbf{PhD}
+    from Institut Supérieur de l'Aéronautique et de l'Espace (ISAE),
+    Toulouse,\\
+    under the supervision of 
+    \textsf{Pierre Borderies} (ONERA, Toulouse)\\
+    and \textsf{Jean-René Poirier} {(LAPLACE, Toulouse)}\\ %,
+    Defended the 22${}^{nd}$ March 2012 at SupAéro (ISAE), 
+    with the jury composed by :
+    Abderrahmane Bendali, Pierre Borderies, Christophe Bourlier,
+    Christophe Geuzaine, Luc Giraud, Jean-René Poirier, 
+    Jean-Yves Suratteau.\\
+    \textbf{Title :}
+    \emph{Contribution of the modeling
+      of the electromagnetic scattering}\\ 
+      \emph{by rough surfaces
+      from rigorous methods}.\\
+  \end{minipage} \\[1ex]
+
+  2007 -- 2011 &
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Teaching} 
+    in the Department of Electronics and Signal Processing,
+    ENSEEIHT, Toulouse :
+    \begin{itemize}
+    \item Introduction to the Analysis of Partial Differential
+      Equations \hfill \emph{(master level)},
+    \item Fourier Analysis  \hfill  \emph{(undergraduate level)},
+    \item Numerical Analysis  \hfill  \emph{(undegraduate level)},
+    \item Algorithm and Programming in C  \hfill \emph{(undergraduate. level)}.
+    \end{itemize}
+    I also supervised several students in projects  \hfill \emph{(Bachelor level)}: 
+    \begin{itemize}
+    \item Study of an equivalent impedance of a rough surface, 
+    \item Comparison between plane waves and Gaussian beams in a MoM code,
+    \item Numerical effects of the finitude of surfaces in the spectrum of
+    integral operators.\\
+    \end{itemize} 
+  \end{minipage}\\ [1ex]
+  
+  2006--2007 & 
+  \begin{minipage}[t]{1.0\linewidth}
+    \textbf{Master of Science} (\emph{magna cum laude}) 
+    in ``ElectroMagnetism and OptoElectronics'',\\
+    Institut National Polytechnique, Toulouse. \\
+    Thesis under the surpervision of \textsf{Andrew Thain} (EADS Innovation Works),\\
+    \emph{Numerical Simulations of antennas on large planes}. \\[-1ex]
+  \end{minipage} \\[1ex]
+
+  2005 &
+    \begin{minipage}[t]{\linewidth}
+      9 weeks in Dublin City University, Radio and Optical Comm. Lab.,\\
+      under the supervision of Frédéric Surre and Pascal Landais,\\
+      \emph{Numerical Investigations of Losses in THz waveguides}.\\
+    \end{minipage}\\
+    
+  \textbf{2004 -- 2007} &
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Engineer degree} in Electronics and Signal Processing,\\
+    ENSEEIHT, Toulouse. \\
+  \end{minipage} \\
+
+  2001--2004 &
+  \begin{minipage}[t]{\linewidth}
+    Preparatory Class for entrance in engineering school, Montpellier. \\
+    \small{\emph{Personal Project: Modeling of 1D snow avalanche and
+        numerical simulaion by finite difference}}.
+  \end{minipage} \\
+
+\end{tabular}
+
+
+\medskip
+
+\categorie{Publications}
+\subsubsection*{Articles (with peer-review)}
+
+\begin{itemize}
+\item[\textbullet] 
+\emph{Integral Equations Physically~based Preconditioner for Two~Dimensional Electromagnetic Scattering by Rough Surfaces} \\
+ \moi , P. Borderies, J.-R. Poirier \\
+\textsf{IEEE Antennas and Propagation}, 
+Vol. 59, No. 10, pp. 3764-3774, oct. 2011 \\[-1ex]
+\item[\textbullet]
+\emph{Modélisation de la diffusion électromagnétique par surfaces
+  rugueuses à partir de méthodes rigoureuses}\\
+\moi , P. Borderies, J.-R. Poirier \\
+\textsf{R}evue d'\textsf{E}lectricité et \textsf{E}lectronique,
+No. juin 2012,\\
+(request by the journal for section ``Jeunes Chercheurs'')
+\item[\textbullet] 
+\emph{Local Multiple Traces Formulation for High-Frequency Scattering Problems} \\
+ C. Jerez-Hanckes , J. Pinto, \moi \\
+ \textsf{Journal of Computational and Applied Mathematics},
+ Vol. 289, pp. 306-321, dec. 2015 %[-1ex]
+\item[\textbullet]
+ \emph{Local Multiple Traces Formulation for High-Frequency Scattering
+   Problems by Spectral Elements}\\
+ C. Jerez-Hanckes , J. Pinto, \moi \\
+\textsf{Scientific Computing in Electrical Engineering}, series
+Mathematics and Industry, Springer. (to appear)
+\end{itemize}
+
+\vspace{-0.25cm}
+
+\subsubsection*{Articles in preparation}
+\begin{itemize}
+\item[\textbullet] 
+\emph{Analysis of
+  Homogenization Techniques for Improving Electromagnetic Scattering
+  Computation by Periodic Rough Surfaces : Polarization TM and TE},\\
+with \textsf{J.-R. Poirier}.
+\item[\textbullet] 
+\emph{Analysis of Numerical Performances 
+  of Schwarz non-overlapped Domain Decomposition Method
+  applied to band-gap waveguide},\\
+with \textsf{C. Geuzaine}.
+\item[\textbullet] 
+\emph{\texttt{GetDDM}: an Open Framework for Testing Optimized Schwarz
+  Methods for Time-Harmonic Wave Problems},\\
+with \textsf{B. Thierry, A. Vion, M. El Bouajaji,
+  D. Colignon, N. Marsic, X. Antoine, C. Geuzaine}.
+\begin{flushright}
+ (see \url{http://onelab.info/wiki/GetDDM} )  
+\end{flushright}
+\end{itemize}
+
+\vspace{-0.25cm}
+
+\subsubsection*{International Conferences (with committee selection)}
+\noindent 
+\begin{itemize}
+\item[\textbullet]
+  \textbf{PANACM} \textbf{2015}, Buenos Aires,\\
+  \emph{Multiple Traces Formulation for High-Frequency Scattering}\\
+  C. Jerez-Hanckes, J. Pinto, \moi
+\item[\textbullet]
+\textbf{IEEE ACAMA} \textbf{2014}, Antibes Juan-les-Pins,\\
+\emph{An Open Source Domain Decomposition Solver for
+Time-Harmonic Electromagnetic Wave Problems}\\
+C. Geuzaine, B. Thierry, N. Marsic, D. Colignon, A. Vion, \moi,
+Y. Boubendir, M. El Bouajaji, X. Antoine
+\item[\textbullet]
+\textbf{SCEE} \textbf{2014}, Wuppertal,\\
+\emph{Local Multiple Traces Formulation for High-Frequency Scattering Problems} \\
+ C. Jerez-Hanckes , J. Pinto, \moi
+\item[\textbullet]
+\textbf{EuroEM} \textbf{2012}, Toulouse,\\
+\emph{Homogenization  Techniques for Improving Electromagnetic
+  Scattering Computation by Dielectric Surfaces},
+\moi, P. Borderies, J.-R. Poirier
+\item[\textbullet]
+\textbf{AMPERE}
+%\footnote{13th International Conference
+%on Microwave and RF Heating} 
+\textbf{2011}, Toulouse
+-- \textsf{Best Poster Award}\\
+\emph{Analysis of QR-compression
+Techniques for Improving Electromagnetic Scattering Computation by
+Periodic Rough Surfaces},
+\moi, J. Girardin, J.-R. Poirier, P. Borderies
+
+\item[\textbullet]
+ \textbf{PIERS}
+%\footnote{Progress In Electromagnetics Research
+%   Symposium} 
+\textbf{2010}, Cambridge, \\
+\emph{Analysis of Homogenization Techniques for Improving Electromagnetic Scattering Computation by Rough Surfaces},
+\moi, P. Borderies, J.-R. Poirier
+
+\item[\textbullet]
+ \textbf{WAVES}
+%\footnote{9th International Conference on Mathematical
+ %  and Numerical Aspects of Waves Propagation}
+ \textbf{2009}, Pau,\\
+ \emph{A Physically-based Preconditioner for 2D Electromagnetic Rough Surfaces Scattering Problems},
+ \moi, P. Borderies, J.-R. Poirier
+
+\item[\textbullet]
+ \textbf{WAVES 2009}, Pau,\\
+\emph{High order asymptotic expansion for the scattering of fast oscillating periodic surfaces},
+ J.-R. Poirier, A. Bendali, P. Borderies,  \moi 
+
+\item[\textbullet]
+\textbf{PIERS 2009}, Beijing,\\
+\emph{Analysis of Performances of a Floquet Mode Preconditioner for Electromagnetic Scattering Computation by Rough Surfaces},
+ \moi, J.-R. Poirier, P. Borderies 
+
+\item[\textbullet] 
+ \textbf{PIERS 2008}, Hangzhou,\\
+\emph{Use of Numerical Methods for Assessing Validity Domains of the approximations Involved in Electromagnetic Interaction Modeling with vegetation},
+ P. Borderies, J.-R. Poirier, \moi, C. Lauprette, L. Villard, P. Dubois~Fernandez, N. Floury 
+\end{itemize}
+
+\vspace{0.1cm}
+
+\noindent 
+\textbf{Reviewer} for 
+IEEE Antennas and Propagation, 
+IEEE Geoscience and Remote Sensing
+
+
+\categorie{Others}
+\noindent
+
+\begin{tabular}{ll}
+  \textbf{Computer skills} 
+  & 
+  \begin{minipage}{0.7\linewidth}
+    \texttt{C/C++},  Python,
+    \texttt{Fortran}, \LaTeX, \textsc{Matlab}/Scilab, \texttt{bash}\\
+    user of GNU/Linux since 1999.
+  \end{minipage}\\
+
+  \\
+
+  \begin{minipage}{0.3\linewidth}
+    \textbf{voluntary of GENEPI}\\
+    (from 2004 to 2009)\\
+    \url{http://www.genepi.fr}      
+  \end{minipage}
+  & 
+  \begin{minipage}{0.7\linewidth}
+  Intervention in prison\\
+  \emph{(teaching, participation to an internal newspaper, sports)},\\
+  Organization of events to talk about problems of prison\\
+  \emph{(intervention in high school, conferences, radio emission)}
+  \end{minipage}\\
+
+  \\
+
+  \begin{minipage}{0.3\linewidth}
+  participation to Colombbus\\    
+  \url{http://www.colombbus.org}
+  \end{minipage}
+  &
+  \begin{minipage}{0.7\linewidth}
+  Promotion of computer sciences
+  in junior secondary school using Free Software
+  \end{minipage}\\
+  
+  \\
+
+  {Miscellaneous} 
+  & Mountain (hiking, climbing)
+\end{tabular}
+
+\categorie{References}
+\begin{tabular}{lcl}
+  \begin{minipage}{0.5\linewidth}
+    \quad \textbf{Jean-René \textsc{Poirier}}\\      
+    LAPLACE -- INPT-ENSEEIHT\\
+    2 rue Charles Camichel, BP 7122\\
+    FR-31071 Toulouse, Cedex 7, France\\
+    \url{poirier@laplace.univ-tlse.fr}\\
+    +33 5 343 223 81
+  \end{minipage}
+& &
+ \begin{minipage}{0.5\linewidth}
+    \quad\textbf{Pierre \textsc{Borderies}}\\
+    ONERA -- DEMR\\
+    2 avenue Edouard Belin, BP 74025\\
+    FR-31055 Toulouse, Cedex 4, France\\
+    \url{pierre.borderies@onera.fr}\\
+    +33 5 622 527 18
+  \end{minipage}
+\\
+& & 
+\\
+  \begin{minipage}{0.5\linewidth}
+    \quad\textbf{Christophe \textsc{Geuzaine}}\\
+    University of Liège --  Montefiore Institute\\
+    Sart-Tilman, B28, P32\\
+    B-4000 Liège, Belgium\\
+    \url{cgeuzaine@ulg.ac.be}\\
+    +32 4 366 37 30
+  \end{minipage}
+& &
+ \begin{minipage}{0.5\linewidth}
+    \quad\textbf{Xavier \textsc{Antoine}}\\
+    Université  de Lorraine\\
+    Bureau 301, B.P. 239\\
+    FR-54506 Vandoeuvre-lès-Nancy Cedex, France\\
+    \url{xavier.antoine@univ-lorraine.fr}\\
+    +33 3 836 845 61
+  \end{minipage}
+\end{tabular}
+
+\end{document}
+
+
+
+ 
