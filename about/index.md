@@ -75,7 +75,7 @@ now Santiago.
 About this site
 ===============
 
-The site is mainly written in Markdown with GNU Emacs,
+The site is mainly written in [Markdown][] with GNU Emacs,
 then [Jekyll][] generates the static webpages.
 
 The nice point is: once Jekyll configured,
@@ -91,6 +91,7 @@ CSS styling by [Mark Reid][reid]
 ([some rights reserved][cc]).
 
 
+[Markdown]: http://daringfireball.net/projects/markdown/
 [Jekyll]: https://jekyllrb.com/
 [Org]: http://orgmode.org/
 
