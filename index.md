@@ -46,7 +46,6 @@ fan of bad movies, ...
   publications
   </a>
   or my
-  <a href="/about/CV.html">
   CV
   </a>
   (<a href="/about/CV_tournier.pdf">pdf</a>)

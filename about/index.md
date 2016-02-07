@@ -25,7 +25,11 @@ Email[^1] me: **simon** |DOT| **tournier** |AT| **gmail** |DOT| **com**
 About Me
 ========
 
-My CV is here ([pdf][cvpdf]\|[html][cvhtml])
+My CV is here ([pdf][cvpdf]\|[html][cvhtml])[^2]
+
+[^2]: html is automatically generated from [pandoc][] and the latex is not clean enough to obtain clear html... work in progress.
+
+[pandoc]: http://pandoc.org
 
  + Where I knew the classrooms:
    - Elementary School at Gabriac, Middle School at Espalion, Secondary School at Rodez
