@@ -28,7 +28,7 @@ fan of bad movies, ...
 <div class="section list">
   <h1>Research</h1>
   <p class="excerpt">
-  My day job is as a 
+  My day job is as a
   <a href="/work/">
   Postdoctoral Research Fellow
   </a>
@@ -39,8 +39,8 @@ fan of bad movies, ...
   </p>
 
   <p></p>
-  
-  <p class="excerpt">  
+
+  <p class="excerpt">
   See my
   <a href="/work/pub.html">
   publications
@@ -48,7 +48,7 @@ fan of bad movies, ...
   or my
   <a href="/about/CV.html">
   CV
-  </a> 
+  </a>
   (<a href="/about/CV_tournier.pdf">pdf</a>)
   for a concrete overview.
   </p>
@@ -57,7 +57,7 @@ fan of bad movies, ...
 
   <h1>Blogs</h1>
   <p class="excerpt">
-  I keep a kind of 
+  I keep a kind of
   <a href="/blog/">
   blog
   </a>
@@ -91,7 +91,8 @@ for SocialNetwork in [Facebook, Twitter, Phone, And-So-On]:
         return not me + noise()
   {% endhighlight %}
 
-  Email me: **simon** |DOT| **tournier** |AT| **gmail** |DOT| **com**
+
+  Email me: <b>simon</b> DOT <b>tournier</b> AT <b>gmail</b> DOT <b>com</b>
   </p>
 </div>
 
@@ -100,7 +101,7 @@ for SocialNetwork in [Facebook, Twitter, Phone, And-So-On]:
 <center>
 </hr>
 <em>
-Mais il restait le monde entier à explorer</br>
+Mais il restait le monde entier à explorer<br>
 et derrière les montagnes
 j'imaginais toujours des horizons sans limites.
 </em>
