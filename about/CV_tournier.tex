@@ -15,6 +15,8 @@
 %\usepackage{url}
 \usepackage{hyperref}
 
+\usepackage{multirow}
+
 \definecolor{Orange}{rgb}{0.85,0.57,0.2}
 \newcommand{\fin}{\\[1ex]}
 \newcommand{\espace}{\vskip 1cm}
@@ -183,6 +185,7 @@
 % ----------------------------------------------
 
 \newcommand\moi{$\underline{\textrm{S. Tournier}}$}
+\newcommand\moistar{$\underline{\textrm{S. Tournier}}^\star$}
 
 \begin{document}
 \pagestyle{empty}
@@ -199,24 +202,25 @@
   %\colorbox{Orange}{
   \begin{minipage}[t]{0.45\linewidth}
     \begin{flushright}
-      Dept. of Mathematical Eng.\\
-      Pontificia Universidad Cat\'olica de Chile\\
-      Av. Vicuna Mackenna 4860,
-      Macul\\
-      Santiago de Chile
+      Université Paris 7 Diderot\\
+      BioData Center\\
+      Institut Universitaire d'Hématologie\\
+      Hôpital Saint-Louis\\
     \end{flushright}
   \end{minipage} %}
 \end{tabular}
 
-\medskip
+%% \medskip
+%\vspace{0.1cm}
 
 \noindent
 \begin{tabular}{@{} l l}
+  \textit{Tél. :} & +33 (0) 6 12 32 19 52  \\
   \textit{Email :} & \url{ simon.tournier@alumni.enseeiht.fr} \\
 \end{tabular}
 
 %\medskip
-\vspace{-0.2cm}
+\vspace{-0.3cm}
 \begin{center}
   %\line(1,0){250}
   %\\
@@ -228,7 +232,7 @@
   Preconditionning techniques,
   Homogenization,
   Domain Decomposition Method,\\
-  Scientific Programming
+  Scientific Computing
       \end{center}
     \end{minipage}
   }
@@ -236,18 +240,38 @@
   %\line(1,0){250}
 \end{center}
 
-\vspace{-0.7cm}
+\vspace{-0.5cm}
 \categorie{Academic Background and Experiences}
 
 \noindent
 \begin{tabular}{r @{\qquad} p{\textelarge}}
 
-  \textbf{2014 -- (2016)} &
+  \textbf{2016 -- \dots} &
   \begin{minipage}[t]{\linewidth}
-    \textbf{Post-doctoral} position in the PUC (Chile)
+    \textbf{Research Engineer} position at the Université Paris 7 Diderot\\
+    \normalsize
+    in charge of numerical Core Facilities in biological wet laboratory:\\
+    $\bullet$ support about bioinformatics tools:
+    predictive modeling,
+    clustering analysis of flow cytometry data,
+    aligment of Next Generation Sequencing (NGS) data and variant calling
+    ;\\
+    $\bullet$ system administrator of 9 nodes cluster and of desktop computers,
+    management of large data sets from biological experiments.
+    %% \begin{itemize}
+    %% \item support about bioinformatics tools
+    %% \item system administrator of 9 nodes cluster
+    %% \end{itemize}
+    \\[-1ex]
+  \end{minipage} \\
+
+
+  \textbf{2014 -- 2016} &
+  \begin{minipage}[t]{\linewidth}
+    \textbf{Post-doctoral} position at the PUC (Chile)
     \small{[FONDECYT grant: 3150446]} \\
     \normalsize
-    under the supervision of \textsf{Carlos Jerez-Hanckes},\\
+    under the supervision of \textsf{Prof. Carlos Jerez-Hanckes},\\
     \emph{Efficient and Robust HPC Solver
       for Multiple Traces Formulations}\\
        \emph{for Engineering Applications}. \\[-1ex]
@@ -256,9 +280,9 @@
 
   \textbf{2012 -- 2013} &
   \begin{minipage}[t]{\linewidth}
-    \textbf{Post-doctoral} position in the University of Liège (Belgium),
+    \textbf{Post-doctoral} position at the Université de Liège (Belgium),
     in the ACE team,\\
-    under the supervision of \textsf{Christophe Geuzaine},\\
+    under the supervision of \textsf{Prof. Christophe Geuzaine},\\
     \emph{Study of some preconditioning techniques
       for Finite Elements Methods}\\
     \emph{and Decomposition of Domain Method}.  \\[-1ex]
@@ -284,26 +308,26 @@
       from rigorous methods}.\\
   \end{minipage} \\[1ex]
 
-  2007 -- 2011 &
-  \begin{minipage}[t]{\linewidth}
-    \textbf{Teaching}
-    in the Department of Electronics and Signal Processing,
-    ENSEEIHT, Toulouse :
-    \begin{itemize}
-    \item Introduction to the Analysis of Partial Differential
-      Equations \hfill \emph{(master level)},
-    \item Fourier Analysis  \hfill  \emph{(undergraduate level)},
-    \item Numerical Analysis  \hfill  \emph{(undegraduate level)},
-    \item Algorithm and Programming in C  \hfill \emph{(undergraduate. level)}.
-    \end{itemize}
-    I also supervised several students in projects  \hfill \emph{(Bachelor level)}:
-    \begin{itemize}
-    \item Study of an equivalent impedance of a rough surface,
-    \item Comparison between plane waves and Gaussian beams in a MoM code,
-    \item Numerical effects of the finitude of surfaces in the spectrum of
-    integral operators.\\
-    \end{itemize}
-  \end{minipage}\\ [1ex]
+  %% 2007 -- 2011 &
+  %% \begin{minipage}[t]{\linewidth}
+  %%   \textbf{Teaching}
+  %%   in the Department of Electronics and Signal Processing,
+  %%   ENSEEIHT, Toulouse :
+  %%   \begin{itemize}
+  %%   \item Introduction to the Analysis of Partial Differential
+  %%     Equations \hfill \emph{(master level)},
+  %%   \item Fourier Analysis  \hfill  \emph{(undergraduate level)},
+  %%   \item Numerical Analysis  \hfill  \emph{(undegraduate level)},
+  %%   \item Algorithm and Programming in C  \hfill \emph{(undergraduate. level)}.
+  %%   \end{itemize}
+  %%   I also supervised several students in projects  \hfill \emph{(Bachelor level)}:
+  %%   \begin{itemize}
+  %%   \item Study of an equivalent impedance of a rough surface,
+  %%   \item Comparison between plane waves and Gaussian beams in a MoM code,
+  %%   \item Numerical effects of the finitude of surfaces in the spectrum of
+  %%   integral operators.\\
+  %%   \end{itemize}
+  %% \end{minipage}\\ [1ex]
 
   2007 &
   \begin{minipage}[t]{\linewidth}
@@ -323,8 +347,8 @@
 
   2005 &
     \begin{minipage}[t]{\linewidth}
-      9 weeks in Dublin City University, Radio and Optical Comm. Lab.,\\
-      under the supervision of Frédéric Surre and Pascal Landais,\\
+      9 weeks at Dublin City University, Radio and Optical Comm. Lab.,\\
+      under the supervision of Frédéric Surre and Prof. Pascal Landais,\\
       \emph{Numerical Investigations of Losses in THz waveguides}.\\
     \end{minipage}\\
 
@@ -348,7 +372,7 @@
 
 \categorie{Publications}
 \vspace{-0.65cm}
-\subsubsection*{Articles (with peer-review)}
+\subsubsection*{Articles published under peer-review}
 
 \begin{itemize}
 \item[\textbullet]
@@ -372,14 +396,17 @@ No. juin 2012.\\
  \emph{Local Multiple Traces Formulation for High-Frequency Scattering
    Problems by Spectral Elements},\\
  C. Jerez-Hanckes , J. Pinto, \moi \\
-\textsf{Scientific Computing in Electrical Engineering}, series
-Mathematics and Industry, Springer. (to appear)
+\textsf{Scientific Computing in Electrical Engineering: SCEE 2014,
+  Wuppertal, Germany},
+series Mathematics and Industry, Springer,
+ pp. 73-82, 2016
 \item[\textbullet]
   \emph{\texttt{GetDDM}: an Open Framework for Testing Optimized Schwarz
     Methods for Time-Harmonic Wave Problems},\\
   B. Thierry, A. Vion, \moi, M. El Bouajaji,
   D. Colignon, N. Marsic, X. Antoine, C. Geuzaine\\
-  \textsf{Computer Physics Communications} (to appear)
+  \textsf{Computer Physics Communications},
+  Vol. 203, pp. 309-330, 2016
   \begin{flushright}
     (see \url{http://onelab.info/wiki/GetDDM} )
   \end{flushright}
@@ -391,13 +418,20 @@ Mathematics and Industry, Springer. (to appear)
 
 \vspace{-0.65cm}
 
-\subsubsection*{Articles in preparation}
+\subsubsection*{Article submitted}
 \begin{itemize}
 \item[\textbullet]
-  \emph{Analysis of
-    Homogenization Techniques for Improving Electromagnetic Scattering
-  Computation by Periodic Rough Surfaces : Polarization TM and TE},\\
-  with \textsf{J.-R. Poirier}.
+  \emph{Technique of Homogenization to Improve the Scattering by one-dimensional
+    Rough Surface}\\
+  \moi, J.-R. Poirier, P. Borderies\\
+  \textsf{IEEE Antennas and Propagation}
+  \\
+\end{itemize}
+
+\vspace{-0.65cm}
+
+\subsubsection*{Article in preparation}
+\begin{itemize}
 \item[\textbullet]
   \emph{Multi-Scattering with Transmission Conditions: efficient
     preconditionned multi-trace formulation},\\
@@ -423,7 +457,7 @@ Mathematics and Industry, Springer. (to appear)
   \textbf{WAVES} \textbf{2015}, Karlsruhe,\\
   \emph{Preconditioning Techniques
     for Local Multiple Traces Formulation for Scattering Problems} ;
-  \moi,  J. Pinto, C. Jerez-Hanckes
+  \moistar,  J. Pinto, C. Jerez-Hanckes
 
 \item[\textbullet]
   \textbf{WAVES} \textbf{2015}, Karlsruhe,\\
@@ -452,7 +486,7 @@ Mathematics and Industry, Springer. (to appear)
   \textbf{EuroEM} \textbf{2012}, Toulouse,\\
   \emph{Homogenization  Techniques for Improving Electromagnetic
     Scattering Computation by Dielectric Surfaces} ;
-  \moi, P. Borderies, J.-R. Poirier
+  \moistar, P. Borderies, J.-R. Poirier
 
 \item[\textbullet]
   \textbf{AMPERE}
@@ -463,7 +497,7 @@ Mathematics and Industry, Springer. (to appear)
   \emph{Analysis of QR-compression
     Techniques for Improving Electromagnetic Scattering Computation by
     Periodic Rough Surfaces} ;
-  \moi, J. Girardin, J.-R. Poirier, P. Borderies
+  \moistar, J. Girardin, J.-R. Poirier, P. Borderies
 
 \item[\textbullet]
   \textbf{PIERS}
@@ -472,7 +506,7 @@ Mathematics and Industry, Springer. (to appear)
   \textbf{2010}, Cambridge, \\
   \emph{Analysis of Homogenization Techniques for Improving
     Electromagnetic Scattering Computation by Rough Surfaces} ;
-  \moi, P. Borderies, J.-R. Poirier
+  \moistar, P. Borderies, J.-R. Poirier
 
 \item[\textbullet]
   \textbf{WAVES}
@@ -481,7 +515,7 @@ Mathematics and Industry, Springer. (to appear)
   \textbf{2009}, Pau,\\
   \emph{A Physically-based Preconditioner for 2D Electromagnetic Rough
     Surfaces Scattering Problems} ;
-  \moi, P. Borderies, J.-R. Poirier
+  \moistar, P. Borderies, J.-R. Poirier
 
 \item[\textbullet]
   \textbf{WAVES 2009}, Pau,\\
@@ -511,28 +545,60 @@ IEEE Antennas and Propagation,
 IEEE Geoscience and Remote Sensing
 
 
+\categorie{Computer Skills}
+\noindent
+
+\begin{tabular}{crl}
+  \multirow{5}{*}{\textbf{Scientific Programming}}
+  & \textbf{current daily use:} &
+  Python, \quad R, \quad \texttt{bash}
+  \\
+  & \textbf{librairies:} &
+  Numpy/Scipy, \hspace{\stretch{1}} BLAS/Lapack, \hspace{\stretch{1}} PETSc (MPI)
+  \\
+  & \textbf{previously used:} &
+  \texttt{C}, \quad \texttt{Fortran}, \quad \texttt{C++}, \quad \textsc{Matlab}/Scilab
+  \\
+  & \textbf{basic knowledge:} &
+  Julia, \quad Haskell, \quad OCaml, \quad Lisp
+  \\
+  & \textbf{advanced user:} &
+  Gmsh, %\footnote{\url{http://gmsh.info}},
+  \quad
+  GetDP, %\footnote{\url{http://getdp.info}},
+  \quad
+  {Bem++}%\footnote{\url{http://www.bempp.org}},
+
+  \\
+  &
+  \\
+
+  \multirow{5}{*}{\textbf{Tools}}
+  & \textbf{visualizing:} &
+  Matplotlib, \quad {ggplot}
+  \\
+  & \textbf{editing:} &
+  \LaTeX/\textsc{Bib}\TeX, \quad Markdown, \quad Org, \quad Emacs
+  \\
+  & \textbf{version control:} &
+  \texttt{git}, \quad mercurial, \quad subversion
+  \\
+  & \textbf{debug:} &
+  \texttt{gdb}, \quad \texttt{pdb}, \quad {Valgrind}, \quad \texttt{gprof}
+  \\
+  & \textbf{build automation:} &
+  Makefile, \quad CMake, \quad Continuous Integration (TravisCI)
+  \\
+
+\end{tabular}
+
+
+
+
 \categorie{Others}
 \noindent
 
 \begin{tabular}{ll}
-  \textbf{Computer skills}
-  &
-  \begin{minipage}{0.7\linewidth}
-    \begin{description}
-      \item[current daily use:] Python, C, \texttt{bash}
-      \item[previously used:] \texttt{C++}, \texttt{Fortran}, PETSc
-        (MPI), \textsc{Matlab}/Scilab
-      \item[basic knowledge:] OCaml, Lisp
-      \item[office softwares:] Gmsh\footnote{\url{http://gmsh.info}},
-        GetDP\footnote{\url{http://getdp.info}},
-        \texttt{bem++}\footnote{\url{http://www.bempp.org}},
-        \LaTeX, \texttt{git}/\texttt{svn}
-    \end{description}
-    user of GNU/Linux since 1999.
-  \end{minipage}\\
-
-  \\
-
   \begin{minipage}{0.3\linewidth}
     \textbf{voluntary of GENEPI}\\
     (from 2004 to 2009)\\
@@ -562,6 +628,7 @@ IEEE Geoscience and Remote Sensing
 
   {Miscellaneous}
   & Mountain (hiking, climbing)
+  \\& \small{user of GNU/Linux since 1999.}
 \end{tabular}
 
 \categorie{References}
@@ -600,8 +667,8 @@ IEEE Geoscience and Remote Sensing
     Pontificia Universidad Cat\'olica de Chile\\
     Av. Vicuna Mackenna 4860, Macul\\
     Santiago de Chile, (Postal Code) 7820436, Chile\\
-    Fax: +56 22 552 2563\\
-  \url{cjerez@ing.puc.cl}
+    \url{cjerez@ing.puc.cl}\\
+    +56 22 552 2563
   \end{minipage}
 
  %% \begin{minipage}{0.5\linewidth}
